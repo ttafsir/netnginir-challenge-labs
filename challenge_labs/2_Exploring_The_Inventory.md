@@ -5,14 +5,14 @@ The Ansible inventory is a list of systems from your infrastructure that Ansible
 The Ansible inventory may be specified in either the INI or YAML formats.
 
 ## Static vs Dynamic Inventories
-Static inventories are static files with a list of hosts. Dynamic inventories are generated through scripts. Ansible can the scripts that return a list of hosts.
+Static inventories are static files with a list of hosts. Dynamic inventories are generated through scripts. Ansible will, essentially, run an executable scripts that return a list of hosts in a JSON format.
 
 ## Documentation
 For more documentation about Ansible inventories, visit the [Working with Inventory](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html) page on the [Ansible Documentation](https://docs.ansible.com/) site.
 
 # Labs
 ## Lab 2.1: Add a host to the default inventory
-login to the control node of your [Vagrant Lab](https://github.com/ttafsir/netnginir-ansible-lab) and add **switch2** to the **eos** group in the default inventory
+Login to the control node of your [Vagrant Lab](https://github.com/ttafsir/netnginir-ansible-lab) and add **switch2** to the **eos** group in the default inventory
 
 ### Task List
 - Vagrant ssh to ctrlnode1
@@ -26,7 +26,7 @@ login to the control node of your [Vagrant Lab](https://github.com/ttafsir/netng
 [View Solution](../solutions/2.1_add_host_to_inventory.md)
 
 ## Lab 2.2: change the default inventory
-login to the control node of your [Vagrant Lab](https://github.com/ttafsir/netnginir-ansible-lab) create new inventory file called `inventory` in `~/ansible`. Create a group called **veos** and add **switch1** to that group. Modify the default ansible configuration file in `/etc/ansible/ansible.cfg` so that your new file is the default inventory. Next, modify the `hosts:` directive in `~/ansible/demo-playbook.yml` to work again your new group. Finally, run  `~/ansible/demo-playbook.yml`.
+Login to the control node of your [Vagrant Lab](https://github.com/ttafsir/netnginir-ansible-lab) and create new inventory file called `inventory` in `~/ansible`. Create a group called **veos** and add **switch1** to that group. Modify the default ansible configuration file in `/etc/ansible/ansible.cfg` so that your new file is the default inventory. Next, modify the `hosts:` directive in `~/ansible/demo-playbook.yml` to work against your new group. Finally, run  `~/ansible/demo-playbook.yml`.
 
 ### Task List
 - Vagrant ssh to ctrlnode1
