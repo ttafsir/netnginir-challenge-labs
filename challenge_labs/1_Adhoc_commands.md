@@ -22,7 +22,7 @@ For more documentation on Ad-hoc commands visit the [Introduction To Ad-Hoc Comm
 ## Lab 1.1: Get information from network device
 login to the control node of your [Vagrant Lab](https://github.com/ttafsir/netnginir-ansible-lab) and run an ad-hoc command to get the output of `show version` from the devices in the eos group. Be sure to supply the SSH password at the CLI.
 
-###Task List:
+### Task List:
 - Vagrant ssh to ctrlnode1
 - change into the 'ansible' directory
 - run adhoc command
